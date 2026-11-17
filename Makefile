@@ -29,5 +29,7 @@ test:
 	./build/rapoo_protocol_test.exe
 	$(CXX) $(CXXFLAGS) tests/rapoo_driver_test.cpp src/drivers/rapoo.cpp -o build/rapoo_driver_test.exe
 	./build/rapoo_driver_test.exe
+	$(CXX) $(CXXFLAGS) tests/lamzu_driver_test.cpp src/drivers/lamzu.cpp -o build/lamzu_driver_test.exe
+	./build/lamzu_driver_test.exe
 
 .PHONY: clean test
